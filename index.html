@@ -1,0 +1,123 @@
+<!--
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Google Auth Demo</title>
+   <!-- <meta name="google-signin-client_id" content="19853426778-0gveelt16q8omhaknbkiga2rqashkl77.apps.googleusercontent.com"> 
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  
+  <script>
+      window.onGoogleLibraryLoad = () => {
+      google.accounts.id.initialize({
+        client_id:'19853426778-0gveelt16q8omhaknbkiga2rqashkl77.apps.googleusercontent.com',
+        cancel_on_tap_outside: false,
+        //callback: onOneTapSignedIn,
+        prompt_parent_id: "root",
+        //intermediate_iframe_close_callback : close_callback1
+      });
+      google.accounts.id.prompt((notification) => {
+        if (notification.isNotDisplayed()) {
+          console.log(notification.getNotDisplayedReason());
+        } else if (notification.isSkippedMoment()) {
+          console.log(notification.getSkippedReason());
+        } else if (notification.isDismissedMoment()) {
+          console.log(notification.getDismissedReason());
+        } else {
+          
+        }
+      });
+    }
+    </script>
+  
+  
+  
+  </head>
+-->
+  <!--
+  <body>
+    <h1>Welcome to the OneTap Google SignIn Demo Page</h1>
+    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+    <div id="content"></div>
+    <button onclick="signOut()">Sign Out</button>
+</body>  -->
+
+<!--  
+<script>
+    function onSignIn(googleUser)
+    {
+
+        console.log('User is '+ JSON.stringify(googleUser.getBasicProfile()));
+
+        document.querySelector('#content').innerText=googleUser.getBasicProfile().getName();
+
+    }
+
+    function signOut()
+    {
+        gapi.auth2.getAuthInstance().signOut().then(function(){
+            console.log('User Signed Out!!');
+        })
+    }
+</script> -->
+  
+  
+<!--  <body>
+    
+    <h1>Welcome to the OneTap Google SignIn Demo Page</h1>
+    <div id="root"></div>
+    
+  </body>
+
+</html>
+
+-->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using one tap sigin"
+    />
+    <script src="https://accounts.google.com/gsi/client" async defer ></script>
+    <script>
+      window.onGoogleLibraryLoad = () => {
+      google.accounts.id.initialize({
+        client_id:'19853426778-0gveelt16q8omhaknbkiga2rqashkl77.apps.googleusercontent.com',
+        cancel_on_tap_outside: false,
+        //callback: onOneTapSignedIn,
+        prompt_parent_id: "root",
+        //intermediate_iframe_close_callback : close_callback1
+      });
+      google.accounts.id.prompt((notification) => {
+        if (notification.isNotDisplayed()) {
+          console.log(notification.getNotDisplayedReason());
+        } else if (notification.isSkippedMoment()) {
+          console.log(notification.getSkippedReason());
+        } else if (notification.isDismissedMoment()) {
+          console.log(notification.getDismissedReason());
+        } else {
+          
+        }
+      });
+    }
+    </script>
+    <title>One tap Login App</title>
+  </head>
+  <body>
+    
+    <div id="root"></div>
+    
+  </body>
+</html>
